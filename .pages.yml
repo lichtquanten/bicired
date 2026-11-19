@@ -22,7 +22,7 @@ content:
     path: src/_data/hours.json
     fields:
       - name: hours
-        label: ""
+        label: Hours
         type: object
         list:
           collapsible:
