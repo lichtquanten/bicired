@@ -25,7 +25,7 @@ content:
         type: object
         list:
           collapsible:
-              summary: "{label}"
+              summary: "{name}"
         label: Asdf
         fields:
           - { name: day, label: Day, type: string }
