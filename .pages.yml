@@ -21,14 +21,13 @@ content:
     type: file
     path: src/_data/hours.json
     fields:
-      - { name: monday, label: Monday, component: day }
-      - { name: tuesday, label: Tuesday, component: day }
-      - { name: wednesday, label: Wednesday, component: day }
-      - { name: thursday, label: Thursday, component: day }
-      - { name: friday, label: Friday, component: day }
-      - { name: saturday, label: Saturday, component: day }
-      - { name: sunday, label: Sunday, component: day }
-
+      - name: days
+        label: Days
+        type: object
+        list: true
+        fields:
+          - { name: day, label: Day, type: string }
+          - { name: hours, label: Hours, type: string }
   - name: bigimportant
     label: Big Important
     type: file
