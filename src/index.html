@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<header lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="DIY/DIT bicycle repair co-op in Los Angeles">
+    <title>Bicycle Kitchen</title>
+    <!-- <nav>
+
+    </nav> -->
+</header>
+
+<body>
+    <main>
+        <p>Hi from Bicycle Kitchen</p>
+        {% for day in hours %}
+            <p>{{ day.name }}: {{ day.open }}-{{ day.close }} </p>
+        {% endfor %}
+    </main>
+</body>
+
+</html>

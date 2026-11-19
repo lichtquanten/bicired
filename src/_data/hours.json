@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Monday",
+    "open": "6pm",
+    "close": "9pm"
+  },
+  {
+    "name": "Tuesday",
+    "open": "7pm",
+    "close": "8pm"
+  }
+]
