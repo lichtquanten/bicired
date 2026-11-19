@@ -20,9 +20,7 @@ content:
     label: Hours
     type: file
     list:
-      collapsible:
-        collapsed: true
-        summary: "{title} ({index})"
+      collapsible: false
     path: src/_data/hours.json
     fields:
       - { name: day, label: Day, type: string }
