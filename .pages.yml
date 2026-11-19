@@ -3,9 +3,6 @@ components:
     type: object
     label: Day
     fields:
-      - name: day
-        label: Day
-        type: string
       - name: hours
         label: Hours
         type: string
