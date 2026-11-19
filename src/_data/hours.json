@@ -1,6 +1,9 @@
-[
-  {
-    "day": "Monday",
-    "hours": "2pm-3pm"
-  }
-]
+{
+  "asdf": [
+    {
+      "day": "asdf",
+      "hours": "adsfsadfsd"
+    },
+    {}
+  ]
+}
