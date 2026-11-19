@@ -23,7 +23,8 @@ content:
     fields:
       - name: asdf
         type: object
-        list: true
+        list:
+          collapsible: true
         label: Asdf
         fields:
           - { name: day, label: Day, type: string }
