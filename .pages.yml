@@ -7,15 +7,23 @@ content:
       - name: monday
         label: Monday
         type: string
-      - name: monday
+      - name: tuesday
+        label: Tuesday
         type: string
-      - name: monday
+      - name: wednesday
+        label: Wednesday
         type: string
-      - name: monday
+      - name: thursday
+        label: Thursday
         type: string
-      - name: monday
+      - name: friday
+        label: Friday
         type: string
-      - name: monday
+      - name: saturday
+        label: Saturday
+        type: string
+      - name: sunday
+        label: Sunday
         type: string
   - name: bigimportant
     label: Big Important
