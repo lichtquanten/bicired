@@ -19,18 +19,11 @@ content:
   - name: hours
     label: Hours
     type: file
+    list: true
     path: src/_data/hours.json
     fields:
-      - name: hi
-        label: hiname
-        type: string
-      - name: days
-        label: Days
-        type: object
-        list: true
-        fields:
-          - { name: day, label: Day, type: string }
-          - { name: hours, label: Hours, type: string }
+      - { name: day, label: Day, type: string }
+      - { name: hours, label: Hours, type: string }
   - name: bigimportant
     label: Big Important
     type: file
