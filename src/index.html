@@ -13,8 +13,12 @@
 <body>
     <main>
         <p>Hi from Bicycle Kitchen</p>
-        {% for day in hours %}
-            <p>{{ day.name }}: {{ day.open }}-{{ day.close }} </p>
+        {% for day in hours["hours"] %}
+        <p>{{ day.day }}: {{ day.hours }}
+            {% if day.note %}
+                (<i>{{ day.note }}</i>)
+            {% endif %}
+            </p>
         {% endfor %}
     </main>
 </body>
