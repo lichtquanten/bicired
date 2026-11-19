@@ -21,7 +21,8 @@ content:
     type: file
     path: src/_data/hours.json
     fields:
-      - name: asdf
+      - name: hours
+        label: Hours
         type: object
         list:
           collapsible:
