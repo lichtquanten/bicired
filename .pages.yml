@@ -1,3 +1,14 @@
+components:
+  day:
+    type: object
+    label: Day
+    fields:
+      - name: titttle
+        type: string
+      - name: descddription
+        type: text
+        label: asdfsdf
+
 content:
   - name: hours
     label: Hours
@@ -6,25 +17,8 @@ content:
     fields:
       - name: monday
         label: Monday
-        type: string
-      - name: tuesday
-        label: Tuesday
-        type: string
-      - name: wednesday
-        label: Wednesday
-        type: string
-      - name: thursday
-        label: Thursday
-        type: string
-      - name: friday
-        label: Friday
-        type: string
-      - name: saturday
-        label: Saturday
-        type: string
-      - name: sunday
-        label: Sunday
-        type: string
+        component: day
+ 
   - name: bigimportant
     label: Big Important
     type: file
