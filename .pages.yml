@@ -28,8 +28,8 @@ content:
           collapsible:
               summary: "{day}"
         fields:
-          - { name: day, label: Day, type: string }
-          - { name: hours, label: Hours, type: string }
+          - { name: day, label: Day, type: string, required: true }
+          - { name: hours, label: Hours, type: string, required: true }
   - name: bigimportant
     label: Big Important
     type: file
