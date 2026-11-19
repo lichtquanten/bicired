@@ -19,12 +19,15 @@ content:
   - name: hours
     label: Hours
     type: file
-    list:
-      collapsible: false
     path: src/_data/hours.json
     fields:
-      - { name: day, label: Day, type: string }
-      - { name: hours, label: Hours, type: string }
+      - name: asdf
+        type: object
+        list: true
+        label: Asdf
+        fields:
+          - { name: day, label: Day, type: string }
+          - { name: hours, label: Hours, type: string }
   - name: bigimportant
     label: Big Important
     type: file
