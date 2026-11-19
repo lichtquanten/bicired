@@ -26,7 +26,6 @@ content:
         list:
           collapsible:
               summary: "{day}"
-        label: Asdf
         fields:
           - { name: day, label: Day, type: string }
           - { name: hours, label: Hours, type: string }
