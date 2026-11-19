@@ -1,7 +1,3 @@
----
-awesome-thing: wow
----
-
 <!doctype html>
 <html>
 <header lang="en">
@@ -9,16 +5,17 @@ awesome-thing: wow
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="DIY/DIT bicycle repair co-op in Los Angeles">
     <title>Bicycle Kitchen</title>
-    <!-- <nav>
-
-    </nav> -->
 </header>
 
 <body>
     <main>
         <p>Hi from Bicycle Kitchen</p>
-        {% for day in hours %}
-            <p>{{ day.name }}: {{ day.open }}-{{ day.close }} </p>
+        {% for day in hours["hours"] %}
+        <p>{{ day.day }}: {{ day.hours }}
+            {% if day.note %}
+                (<i>{{ day.note }}</i>)
+            {% endif %}
+            </p>
         {% endfor %}
     </main>
 </body>
