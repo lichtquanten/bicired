@@ -30,6 +30,7 @@ content:
         fields:
           - { name: day, label: Day, type: string, required: true }
           - { name: hours, label: Hours, type: string, required: true }
+          - { name: note, label: Note, type: string }
   - name: bigimportant
     label: Big Important
     type: file
