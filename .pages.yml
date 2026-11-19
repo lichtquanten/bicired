@@ -21,6 +21,9 @@ content:
     type: file
     path: src/_data/hours.json
     fields:
+      - name: hi
+        label: hiname
+        type: string
       - name: days
         label: Days
         type: object
