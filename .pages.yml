@@ -8,6 +8,14 @@ components:
         type: string
 
 content:
+  - name: announcements
+    label: Announcements
+    type: file
+    path: src/_data/announcements.json
+    fields:
+      - name: closure
+        label: Closure
+        type: boolean
   - name: hours
     label: Hours
     type: file
