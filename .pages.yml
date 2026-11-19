@@ -3,6 +3,20 @@ content:
     label: Hours
     type: file
     path: src/_data/asdf.json
+    fields:
+      - name: monday
+        label: Monday
+        type: string
+      - name: monday
+        type: string
+      - name: monday
+        type: string
+      - name: monday
+        type: string
+      - name: monday
+        type: string
+      - name: monday
+        type: string
   - name: bigimportant
     label: Big Important
     type: file
