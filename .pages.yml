@@ -3,8 +3,8 @@ components:
     type: object
     label: Day
     fields:
-      - name: hours
-        label: Hours
+      - name: times
+        label: Times
         type: string
 
 content:
