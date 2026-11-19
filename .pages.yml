@@ -1,0 +1,10 @@
+content:
+  - name: bigimportant
+    label: Big Important
+    type: file
+    path: src/bindex.html
+    fields:
+      - name: body
+        type: rich-text
+      - name: awesome-thing
+        type: string
