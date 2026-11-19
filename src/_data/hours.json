@@ -1,23 +1,11 @@
 {
-  "monday": {
-    "times": "6pm-9pm"
-  },
-  "tuesday": {
-    "times": "6pm-9pm"
-  },
-  "wednesday": {
-    "times": "Closed"
-  },
-  "thursday": {
-    "times": "6pm-9pm (*WTNB - women, trans, or non-binary people only)"
-  },
-  "friday": {
-    "times": "Closed"
-  },
-  "saturday": {
-    "times": "12pm-3pm"
-  },
-  "sunday": {
-    "times": "Closed"
-  }
+  "days": [
+    {
+      "day": "Monday",
+      "hours": "6pm-9pm"
+    },
+    {
+      "day": "Tuesday"
+    }
+  ]
 }
