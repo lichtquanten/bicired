@@ -1,4 +1,8 @@
 content:
+  - name: hours
+    label: Hours
+    type: file
+    path: src/_data/asdf.json
   - name: bigimportant
     label: Big Important
     type: file
