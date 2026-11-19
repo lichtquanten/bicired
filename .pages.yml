@@ -3,11 +3,12 @@ components:
     type: object
     label: Day
     fields:
-      - name: titttle
+      - name: day
+        label: Day
         type: string
-      - name: descddription
-        type: text
-        label: asdfsdf
+      - name: hours
+        label: Hours
+        type: string
 
 content:
   - name: hours
