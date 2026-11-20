@@ -8,6 +8,13 @@ components:
         type: string
 
 content:
+  - name: homepage
+    label: Homepage
+    type: file
+    path: src/index.md
+    fields:
+      - name: body
+        type: rich-text
   - name: announcements
     label: Announcements
     type: file
@@ -36,11 +43,4 @@ content:
     type: file
     path: src/bindex.html
     format: code
-  - name: homepage
-    label: Homepage
-    type: file
-    path: src/index.md
-    fields:
-      - name: body
-        type: rich-text
     
