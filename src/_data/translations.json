@@ -1,0 +1,46 @@
+{
+  "Hello": {
+    "en-US": "Hello",
+    "es-US": "Hola"
+  },
+  "Home": {
+    "en-US": "Home",
+    "es-US": "Inicio"
+  },
+  "About": {
+    "en-US": "About",
+    "es-US": "Acerca de"
+  },
+  "Fix a Bike": {
+    "en-US": "Fix a Bike",
+    "es-US": "Arreglar una Bici"
+  },
+  "Get a Bike": {
+    "en-US": "Get a Bike",
+    "es-US": "Consequir una Bici"
+  },
+  "Volunteer": {
+    "en-US": "Volunteer",
+    "es-US": "Apoyar"
+  },
+  "Workshops": {
+    "en-US": "Workshops",
+    "es-US": "Talleres"
+  },
+  "Resources": {
+    "en-US": "Resources",
+    "es-US": "Recursos"
+  },
+  "Donate": {
+    "en-US": "Donate",
+    "es-US": "Donar"
+  },
+  "Hours": {
+    "en-US": "Hours",
+    "es-US": "Horarios"
+  },
+  "Bicycle Kitchen": {
+    "en-US": "Bicycle Kitchen",
+    "es-US": "La Bicicocina"
+  }
+}

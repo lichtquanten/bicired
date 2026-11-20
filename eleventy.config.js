@@ -1,22 +1,13 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import markdownItAnchor from "markdown-it-anchor";
 import i18n from "eleventy-plugin-i18n";
+import translations from "./src/_data/translations.json" with { type: "json" };
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
-  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAnchor));
   eleventyConfig.addPassthroughCopy({ "./src/static/": "/" });
   eleventyConfig.addPlugin(i18n, {
-    translations: {
-      hello: {
-        "en-US": "Hello",
-        "es-US": "Hola",
-      },
-      home: {
-        "en-US": "Home",
-        "es-US": "Casa",
-      },
-    },
+    translations,
     fallbackLocales: {
       "*": "en-US",
     },
@@ -33,6 +24,7 @@ export default function (eleventyConfig) {
       },
     },
   });
+  // eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAnchor));
 }
 
 export const config = {
