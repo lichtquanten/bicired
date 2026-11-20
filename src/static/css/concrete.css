@@ -1,0 +1,149 @@
+/*! concrete.css v3.0.0 | MIT License | github.com/louismerlin/concrete.css */
+
+/**
+ * Set universal color variables
+ */
+
+:root {
+  --fg: #111;
+  --bg: #ddd;
+}
+
+/**
+ * Invert the colors if the user has dark mode activated.
+ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #ddd;
+    --bg: #272222;
+  }
+}
+
+/**
+ * 1. Modify the base font-size to 1.2rem, to make everything larger.
+ * 2. Set box-sizing globally, meaning items height and width includes padding and margin
+ */
+
+html {
+  font-size: 1.2rem; /* 1 */
+  box-sizing: border-box; /* 2 */
+}
+
+/**
+ * 1. Set the text and background color to foreground and background colors
+ * 2. Set the font-family to Helvetica, or equivalent.
+ */
+
+body {
+  background: var(--bg); /* 1 */
+  color: var(--fg); /* 1 */
+  font-family: san-serif, Helvetica, Arial, sans-serif; /* 2 */
+}
+
+/**
+ * Set the link color to foreground color
+ */
+
+a {
+  color: var(--fg);
+}
+
+/**
+ * 1. Set the max width of images to 100%, so that they don't overflow.
+ * 2. Set the height of images relative to their width.
+ */
+
+img {
+  max-width: 100%; /* 1 */
+  height: auto; /* 2 */
+}
+
+/**
+ * Add some padding around the main sections.
+ */
+
+main section + section {
+  padding: 2rem 0;
+}
+
+/**
+ * 1. Center the root main/header/footer elements horizontally.
+ * 2. Set the width of the elements to 640px, with padding for mobile screens.
+ */
+
+body > header,
+body > main,
+body > footer {
+  margin: auto; /* 1 */
+  max-width: 660px; /* 2 */
+  padding-left: 10px; /* 2 */
+  padding-right: 10px; /* 2 */
+  width: 100%; /* 2 */
+}
+
+/**
+ * Center the text in the footer.
+ */
+
+footer {
+  text-align: center;
+}
+
+/**
+ * Set the list bullet to square.
+ */
+
+ul {
+  list-style: square;
+}
+
+/**
+ * Set a margin around the navigation bar
+ */
+nav {
+  margin: 2rem 0;
+}
+
+/**
+ * 1. Remove padding around the navigation bar's inner unordered list
+ * 2. Remove list style for the navigation bar's inner unordered list
+ */
+nav ul {
+  padding: 0; /* 1 */
+  list-style: none; /* 2 */
+}
+
+/**
+ * 1. Set margins around the navigation bar's inner unordered list items
+ * 2. Make navigation bar unordered list elements render horizontally
+ */
+nav ul li {
+  margin: 0 0.2rem; /* 1 */
+  display: inline-block; /* 2 */
+}
+
+/**
+ * 1. Change the margins and padding.
+ * 2. Add a border on the left of these elements.
+ * 3. Set the y overflow to hidden to hide the navigation bar.
+ */
+
+blockquote {
+  margin-left: 0; /* 1 */
+  margin-right: 0; /* 1 */
+  padding: 0.5rem 0.8rem; /* 1 */
+  border-left: 0.1rem solid var(--fg); /* 2 */
+  overflow-y: hidden; /* 3 */
+}
+
+/**
+ * Set the height and margin for the horizontal rule.
+ */
+
+hr {
+  border: none;
+  background-color: var(--fg);
+  height: 0.05rem;
+  margin-top: 2rem;
+}

@@ -1,4 +1,6 @@
 ---
+layout: base
+title: Bicycle Kitchen
 ---
 # Bicycle Kitchen
 
