@@ -9,8 +9,9 @@ export default function (eleventyConfig) {
 
 export const config = {
   dir: {
-    input: "src",
-    data: "_data",
+    input: "src/content",
+    includes: "../_includes",
+    data: "../_data",
     output: "dist",
   },
 };
