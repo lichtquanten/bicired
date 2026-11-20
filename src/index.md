@@ -1,8 +1,10 @@
+---
+---
 # Bicycle Kitchen
 
 Jump to: [About](#about) | [Hours](#hours) | [Repairs + Bikes](#repairs-%2B-bikes) | [Volunteer](#volunteer) | [Donate](#financial-support) | [Contact Us](#contact-us)
 
-* * *
+---
 
 ## About
 
@@ -14,7 +16,7 @@ Our mission is to:
 - foster healthy urban communities, and
 - provide a welcoming space to learn about building, maintaining, and riding bicycles.
 
-* * *
+---
 
 ## Hours
 
@@ -26,7 +28,7 @@ Tuesday: 6pm-9pm
 
 Wednesday: 6pm-9pm
 
-Thursday: 6pm-9pm (\*women, trans, non-binary folks only)
+Thursday: 6pm-9pm (women, trans, non-binary folks only)
 
 Friday: Closed
 
@@ -36,7 +38,7 @@ Sunday: Closed
 
 *Note: Feel free to call [(323) 662-2776](tel:+13236622776) during our open hours to check that we're open. We may close last minute depending on volunteer availability.*
 
-* * *
+---
 
 ## Repairs + Bikes
 
@@ -56,13 +58,13 @@ Suggested: $8/hr of shop use. Typically $50-400 for whole bikes. Parts priced in
 
 Our pricing is sliding scale! We offer a work exchange if you can’t afford a monetary donation.
 
-* * *
+---
 
 ## Volunteer
 
 Come volunteer! No experience or knowledge needed whatsoever. Stop by during our open hours or email us at [volunteer@bicyclekitchen.com](volunteer@bicyclekitchen.com) to get started.
 
-* * *
+---
 
 ## Donate
 
@@ -82,7 +84,7 @@ You can support us directly here: [PayPal](https://www.paypal.com/paypalme/bicyc
 
 Bicycle Kitchen is a 501(c)(3) nonprofit. Please [email us](mailto:kitchen@bicyclekitchen.com) if you would like a receipt.
 
-* * *
+---
 
 ## Contact Us
 
