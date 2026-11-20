@@ -1,73 +1,132 @@
 <!doctype html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="DIY/DIT bicycle repair co-op in Los Angeles">
-    <!-- <link rel="stylesheet" href="/css/concrete.css"> -->
-    <link rel="stylesheet" href="/css/simple.css">
-<!-- <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-> -->
+<html lang="{{ locale }}" dir="{{ dir }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="DIY/DIT bicycle repair co-op in Los Angeles"
+    />
+    <link rel="stylesheet" href="/css/simple.css" />
     <title>{{ title }}</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-            <h1>Bicycle Kitchen</h1>
-            <img style="filter: invert(var(--inversion)); max-width: 4rem" src="/img/logo.png" alt="yo" width="10px">
-            <nav>
-                <ul>
-                    <li>
-                        <img style="max-width:2rem" src="/img/bike.png" alt="Poorly drawn bicycle" >
-                    </li>
-                <li>
-                    <a href="/">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="/about">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="/volunteer">
-                        Volunteer
-                    </a>
-                </li>
-                <li>
-                    <a href="/donate">
-                        Donate
-                    </a>
-                </li>
-                    <li>
-                        <img style="max-width:2rem" src="/img/wrench.png" alt="Poorly drawn wrench" >
-                    </li>
-                </ul>
-            </nav>
-            <div style="display: flex; justify-content: center">
-                <img style="margin: 0; padding: 0; flex-shrink: 1; flex-grow: 0; min-width: 0; max-width:2rem" src="/img/wrench.png" alt="yo" width="10px">
-            </div>
-        <hr>
-    </header>
-    <main>
-        {{ content }}
-    </main>
-    <footer>
-        <h1>
-            Contact Us
-        </h1>
-            <p>Email: <a href="mailto:kitchen@bicyclekitchen.com">kitchen@bicyclekitchen.com</a></p>
-            <p>Phone: <a href="tel:+13236622776">(323) 662-2776</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/bicicocina">@bicicocina</a></p>
-            <p>Directions: <a href="geo:34.0959335,-118.2862270">4429 Fountain Ave, Los Angeles, CA 90029</a></p>
-    </footer>
-</body>
+      <!-- <div style="font-family: serif; font-size: 3rem; display: flex; align-items: center; justify-content: space-around;">
+        <span>Bicycle Kitchen</span>
+        <img
+          style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
+          src="/img/logo.png"
+          alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
+          width="10px"
+        />
+        <span>Bicicocina</span>
+      </div> -->
+      <div display: flex; align-items: center; justify-content: flex-left;>
+        <img
+          style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
+          src="/img/logo.png"
+          alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
+        />
+        <img
+          style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
+          src="/img/bk-in-sunny-la.png"
+          alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
+        />
 
-</html>
-            <!-- <div style="flex-wrap: wrap; display: flex; align-items: center; justify-content: center; max-width: 50%; margin: 0 auto;"> <img style="flex-shrink: 1; flex-grow: 0; min-width: 0; max-width:2rem" src="/img/bike.png" alt="yo" >
-            <h1 style="margin: 0; padding: 0; flex-shrink: 0; font-family: serif">Bicycle Kitchen</h1>
+
+      </div>
+      <nav>
+        <!-- <img
+          style="max-width: 5rem"
+          src="/img/bike.png"
+          alt="Poorly drawn, hand-sketched bicycle"
+        /> -->
+                <img
+          style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
+          src="/img/logo.png"
+          alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
+        />
+        <ul>
+          <li>
+            <a href="/{{ locale }}"> {{ 'home' | i18n }} </a>
+          </li>
+          <li>
+            <a href="/{{ locale }}/about"> About </a>
+          </li>
+          <li>
+            <a href="/fix-a-bike"> Fix a Bike </a>
+          </li>
+          <li>
+            <a href="/get-a-bike"> Get a Bike </a>
+          </li>
+          <li>
+            <a href="/workshops"> Workshops </a>
+          </li>
+          <li>
+            <a href="/repairs"> Repairs </a>
+          </li>
+          <li>
+            <a href="/{{ locale }}/volunteer"> Volunteer </a>
+          </li>
+          <li>
+            <a href="/donate"> Donate </a>
+          </li>
+          <li>
+            <a href="/resources"> Resources </a>
+          </li>
+          <li>
+            <a href="/resources"> Contact </a>
+          </li>
+          {% if locale == "en-US" %}
+            <li>
+              <a href="/es-US"> Español </a>
+            </li>
+          {% endif %}
+          {% if locale == "es-US" %}
+            <li>
+              <a href="/en-US"> English </a>
+            </li>
+          {% endif %}
+        </ul>
+                <img
+          style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
+          src="/img/work-with-tools.png"
+          alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
+        />
+        <!-- <img
+          style="max-width: 5rem"
+          src="/img/wrench.png"
+          alt="Poorly drawn, hand-sketched wrench"
+        /> -->
+      </nav>
+      <!-- <div style="display: flex; justify-content: center">
                 <img style="margin: 0; padding: 0; flex-shrink: 1; flex-grow: 0; min-width: 0; max-width:2rem" src="/img/wrench.png" alt="yo" width="10px">
             </div> -->
+      <hr />
+    </header>
+    <h1>{{ 'hello' | i18n }}</h1>
+    <main>{{ content }}</main>
+    <footer>
+      <h1>Contact Us</h1>
+      <p>
+        Email:
+        <a href="mailto:kitchen@bicyclekitchen.com"
+          >kitchen@bicyclekitchen.com</a
+        >
+      </p>
+      <p>Phone: <a href="tel:+13236622776">(323) 662-2776</a></p>
+      <p>
+        Instagram:
+        <a href="https://www.instagram.com/bicicocina">@bicicocina</a>
+      </p>
+      <p>
+        Directions:
+        <a href="geo:34.0959335,-118.2862270"
+          >4429 Fountain Ave, Los Angeles, CA 90029</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
