@@ -42,7 +42,7 @@ content:
         type: string
       - name: body
         type: rich-text
-  - name: site-en
+  - name: site-es
     label: Site (Spanish)
     type: collection
     path: src/content/es-US
