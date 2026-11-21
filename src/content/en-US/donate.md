@@ -1,6 +1,7 @@
 ---
 layout: base.html
 title: Donate
+slug: donate
 ---
 # Donate
 

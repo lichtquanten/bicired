@@ -1,6 +1,7 @@
 ---
 layout: base.html
 title: Contact
+slug: contact
 ---
 # Contact Us
 
