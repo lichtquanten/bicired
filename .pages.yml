@@ -54,12 +54,3 @@ content:
         type: string
       - name: body
         type: rich-text
-  - name: translation
-    label: Translations
-    type: file
-    path: src/_data/translations.json
-    fields:
-      - name: title
-        type: string
-      - name: body
-        type: rich-text
