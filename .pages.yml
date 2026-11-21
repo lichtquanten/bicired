@@ -38,7 +38,9 @@ content:
     type: collection
     path: src/content/en-US
     view:
-      primary: node.filename
+      fields: ["node.filename", "title"]
+      primary: "node.filename"
+      layout: tree
     fields:
       - name: slug
         type: string
