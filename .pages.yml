@@ -40,7 +40,6 @@ content:
     view:
       fields: ["node.filename", "title"]
       primary: "node.filename"
-      layout: tree
     fields:
       - name: slug
         type: string
@@ -55,7 +54,7 @@ content:
     view:
       fields: ["node.filename", "title"]
       primary: "node.filename"
-      layout: tree
+      default.order: asc
     fields:
       - name: slug
         type: string
