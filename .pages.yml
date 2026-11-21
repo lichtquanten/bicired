@@ -43,7 +43,6 @@ content:
       default:
         sort: slug
         order: asc
-      layout: tree
     filename: "{slug}.md"
     fields:
       - name: slug
