@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "",
+    "label": "Home"
+  },
+  {
+    "slug": "about",
+    "label": "About"
+  },
+  {
+    "slug": "hours",
+    "label": "Hours"
+  },
+  {
+    "slug": "fix-a-bike",
+    "label": "Fix a Bike"
+  },
+  {
+    "slug": "get-a-bike",
+    "label": "Get a Bike"
+  },
+  {
+    "slug": "volunteer",
+    "label": "Volunteer"
+  },
+  {
+    "slug": "donate",
+    "label": "Donate"
+  },
+  {
+    "slug": "events",
+    "label": "Events"
+  },
+  {
+    "slug": "resources",
+    "label": "Resources"
+  }
+]

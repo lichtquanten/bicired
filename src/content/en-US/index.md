@@ -3,6 +3,8 @@ layout: base
 title: Bicycle Kitchen
 ---
 
+# Bicycle Kitchen (Los Angeles)
+
 ![two people working on a bike](/img/wrenching.jpg)
 
 ## About
@@ -17,25 +19,6 @@ Our mission is to:
 
 * * *
 
-## Hours
-
-*Updated: 11/03/26*
-
-Monday: 6pm-9pm
-
-Tuesday: 6pm-9pm
-
-Wednesday: 6pm-9pm
-
-Thursday: 6pm-9pm (women, trans, non-binary folks only)
-
-Friday: Closed
-
-Saturday: 12pm-3pm
-
-Sunday: Closed
-
-*Note: Feel free to call [(323) 662-2776](tel:+13236622776) during our open hours to check that we're open. We may close last minute depending on volunteer availability.*
 
 * * *
 
@@ -64,33 +47,3 @@ Our pricing is sliding scale! We offer a work exchange if you can’t afford a m
 Come volunteer! No experience or knowledge needed whatsoever. Stop by during our open hours or email us at [volunteer@bicyclekitchen.com](volunteer@bicyclekitchen.com) to get started.
 
 * * *
-
-## Donate
-
-### Bikes + Parts
-
-Come by during our open hours to drop off a donation!
-
-Accepting: bikes, parts, tools, clothes, and accessories
-
-Not accepting: tandem bikes, dented or cracked frames and wheels, trainers, broken tools
-
-### Financial Support
-
-Please consider helping us keep the lights on!
-
-You can support us directly here: [PayPal](https://www.paypal.com/paypalme/bicyclekitchen) | [Venmo](https://www.venmo.com/u/BicycleKitchen) | [Zeffy](https://www.zeffy.com/en-US/donation-form/donate-to-bicycle-kitchen)
-
-Bicycle Kitchen is a 501(c)(3) nonprofit. Please [email us](mailto:kitchen@bicyclekitchen.com) if you would like a receipt.
-
-* * *
-
-## Contact Us
-
-Email: [kitchen@bicyclekitchen.com](mailto:kitchen@bicyclekitchen.com)
-
-Phone: [(323) 662-2776](tel:+13236622776)
-
-Instagram: [@bicicocina](https://www.instagram.com/bicicocina)
-
-Directions: [4429 Fountain Ave, Los Angeles, CA 90029](geo:34.0959335,-118.2862270)

@@ -13,7 +13,7 @@
 
   <body>
     <header>
-      <div style="font-family: serif; font-size: 3rem; display: flex; align-items: center; justify-content: space-around;">
+      <!-- <div style="font-family: serif; font-size: 3rem; display: flex; align-items: center; justify-content: space-around;">
         <span>{{ "Bicycle Kitchen" | i18n }}
         </span>
         <img
@@ -22,59 +22,48 @@
           alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
           width="10px"
         />
-      </div>
+      </div> -->
       <nav>
         <!-- <img
           style="max-width: 5rem"
           src="/img/bike.png"
           alt="Poorly drawn, hand-sketched bicycle"
         /> -->
-                <img
-          style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
+        <img
+          style="
+            margin-top: 1rem;
+            filter: invert(var(--inversion));
+            max-width: 4rem;
+            transform: rotate(10deg);
+          "
           src="/img/logo.png"
           alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
         />
         <ul>
+          {% for key-page in key-pages %}
           <li>
-            <a href="/{{ locale }}"> {{ 'Home' | i18n }} </a>
+            <a href="/{{ locale }}/{{ key-page.slug }}">
+              {{ key-page.label | i18n }}
+            </a>
           </li>
-          <li>
-            <a href="/{{ locale }}/about">{{ "About" | i18n }}</a>
-          </li>
-          <li>
-            <a href="/{{ locale }}/hours">{{ "Hours" | i18n }}</a>
-          </li>
-          <li>
-            <a href="/{{ locale }}/fix-a-bike">{{ "Fix a Bike" | i18n }}</a>
-          </li>
-          <li>
-            <a href="/get-a-bike">{{ "Get a Bike" | i18n }}</a>
-          </li>
-          <li>
-            <a href="/{{ locale }}/volunteer">{{ "Volunteer" | i18n }}</a>
-          </li>
-          <li>
-            <a href="/{{ locale }}/donate">{{ "Donate" | i18n }}</a>
-          </li>
-          <li>
-            <a href="/{{ locale }}/workshops">{{ "Workshops" | i18n }}</a>
-          </li>
-          <li>
-            <a href="/{{ locale }}/resources">{{ "Resources" | i18n }}</a>
-          </li>
+          {% endfor %}
           {% if locale == "en-US" %}
-            <li>
-              <a href="/es-US"> Español </a>
-            </li>
-          {% endif %}
-          {% if locale == "es-US" %}
-            <li>
-              <a href="/en-US"> English </a>
-            </li>
+          <li>
+            <a href="/es-US"> Español </a>
+          </li>
+          {% elsif locale == "es-US" %}
+          <li>
+            <a href="/en-US"> English </a>
+          </li>
           {% endif %}
         </ul>
-                <img
-          style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
+        <img
+          style="
+            margin-top: 1rem;
+            filter: invert(var(--inversion));
+            max-width: 4rem;
+            transform: rotate(10deg);
+          "
           src="/img/work-with-tools.png"
           alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
         />
@@ -89,7 +78,6 @@
             </div> -->
       <hr />
     </header>
-    <h1>{{ 'Hello' | i18n }}</h1>
     <main>{{ content }}</main>
     <footer>
       <h1>Contact Us</h1>
@@ -113,7 +101,7 @@
     </footer>
   </body>
 </html>
-      <!-- <div display: flex; align-items: center; justify-content: flex-left;>
+<!-- <div display: flex; align-items: center; justify-content: flex-left;>
         <img
           style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
           src="/img/logo.png"
