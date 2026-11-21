@@ -43,6 +43,7 @@ content:
       default:
         sort: title
         order: asc
+    filename: "{slug}.md"
     fields:
       - name: slug
         label: Slug
@@ -64,6 +65,7 @@ content:
       default:
         sort: title
         order: asc
+    filename: "{slug}.md"
     fields:
       - name: slug
         label: Slug
