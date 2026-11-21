@@ -55,6 +55,7 @@ content:
         required: true
       - name: body
         type: rich-text
+        label: Body
   - name: site-es
     label: Site (Spanish)
     type: collection
@@ -77,3 +78,4 @@ content:
         required: true
       - name: body
         type: rich-text
+        label: Body
