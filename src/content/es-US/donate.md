@@ -1,7 +1,5 @@
 ---
-layout: base.html
-title: Donate
-slug: donate
+title: Donar
 ---
 # Donar
 
