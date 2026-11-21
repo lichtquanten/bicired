@@ -37,7 +37,8 @@ content:
     label: Site (English)
     type: collection
     path: src/content/en-US
-    filename: "{fields.slug}.json"
+    view:
+      primary: node.filename
     fields:
       - name: slug
         type: string
