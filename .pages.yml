@@ -21,6 +21,20 @@ content:
       - name: closure
         label: Closure
         type: boolean
+  - name: key-pages
+    label: Key Pages
+    type: file
+    list:
+      collapsible:
+        summary: "{label}"
+    path: src/_data/key-pages.json
+    fields:
+      - name: slug
+        label: Slug
+        type: string
+      - name: label
+        label: Label
+        type: string
   - name: site-en
     label: Site (English)
     type: collection
