@@ -2,7 +2,7 @@
 layout: base
 title: Volunteer
 ---
-## Blog Posts
+# Volunteer
 
 {% for post in collections.volunteer %}
  

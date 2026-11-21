@@ -1,5 +1,5 @@
 ---
 layout: base
-title: Beep
+title: About
 ---
-We started a long time ago
+We started a long time ago.
