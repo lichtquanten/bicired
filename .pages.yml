@@ -14,13 +14,13 @@ content:
       - name: body
         type: rich-text
   - name: announcements
-      label: Announcements
-      type: file
-      path: src/_data/announcements.json
-      fields:
-        - name: closure
-          label: Closure
-          type: boolean
+    label: Announcements
+    type: file
+    path: src/_data/announcements.json
+    fields:
+      - name: closure
+        label: Closure
+        type: boolean
   - name: site-en
     label: Site (English)
     type: collection
@@ -39,4 +39,3 @@ content:
         type: string
       - name: body
         type: rich-text
-    
