@@ -37,9 +37,12 @@ content:
     label: Site (English)
     type: collection
     path: src/content/en-US
-    view: 
-          node: filename
+    filename:
+      template: "{fields.slug}.json
+      field: show
     fields:
+      - name: slug
+        type: string
       - name: title
         type: string
       - name: body
