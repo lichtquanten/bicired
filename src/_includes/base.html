@@ -9,62 +9,55 @@
     />
     <link rel="stylesheet" href="/css/simple.css" />
     <title>
-      {% if title == "Home"%} Bicycle Kitchen {% elsif title == "Inicio" %}
-      Bicicocina {% else %} {{title}} {% endif %}
+      {% if title ==  "Bicycle Kitchen" | i18n  %} { "Bicycle Kitchen" | i18n
+      } {% else %} {{title}} {% endif %}
     </title>
   </head>
 
   <body>
     <header>
-      <div style="display: flex; justify-content: space-around; align-items: center;">
-      <span class="title">{{ "Bicycle Kitchen" | i18n }} </span>
+      <div
+        style="
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        "
+      >
+        <span class="title">{{ "Bicycle Kitchen" | i18n }} </span>
         <img
-          style="max-width: 5rem";
+          style="max-width: 5rem"
+          ;
           src="/img/logo.png"
           alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
         />
       </div>
       <nav>
-      <ul>
-        {% if locale == "en-US" %}
-        <li>
-          <a href="/en-US">Home</a>
-        </li>
-        {% elsif locale == "es-US" %}
-        <li>
-          <a href="/es-US">Inicio</a>
-        </li>
-        {% endif %} {% for key-page-titles in key-pages-titles %}
-        <li>
-          <a href="/{{ locale }}/{{ key-page-titles[locale] | slugify }}">
-            {{ key-page-titles[locale] }}
-          </a>
-        </li>
-        {% endfor %} {% if locale == "en-US" %}
-        <li>
-          <a href="/es-US"> Español </a>
-        </li>
-        {% elsif locale == "es-US" %}
-        <li>
-          <a href="/en-US"> English </a>
-        </li>
-        {% endif %}
-      </ul>
-        <!-- <img
-          class="nav-img"
-          src="/img/work-with-tools.png"
-          alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
-        /> -->
+        <ul>
+          <li>
+            <a href="/{{ locale }}" lang="{{ locale }}" hreflang="{{ locale }}"
+              >{{ "Home" | i18n }}</a
+            >
+          </li>
+          {% for key-page-titles in key-pages-titles %}
+          <li>
+            <a href="/{{ locale }}/{{ key-page-titles[locale] | slugify }}">
+              {{ key-page-titles[locale] }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
       </nav>
+        {% assign alternative = locale-alternatives[locale] %}
+          <span lang="{{ alternative.locale }}">
+            {{ "Switch to" | i18n: nil, alternative.locale }}:
+            <a href="/{{alternative.locale}}">{{ alternative.name | i18n: nil, alternative.locale  }}</a>
+          </span>
       <hr />
     </header>
     <main>{{ content }}</main>
     <footer>
       <h1>Contact Us</h1>
-      <img
-        src="/img/wrench.png"
-        alt="Poorly drawn, hand-sketched bicycle"
-      />
+      <img src="/img/wrench.png" alt="Poorly drawn, hand-sketched bicycle" />
       <p>
         Email
         <a href="mailto:kitchen@bicyclekitchen.com">Email</a>

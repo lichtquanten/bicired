@@ -1,0 +1,10 @@
+{
+  "en-US": {
+    "locale": "es-US",
+    "name": "Spanish"
+  },
+  "es-US": {
+    "locale": "en-US",
+    "name": "English"
+  }
+}

@@ -6,5 +6,21 @@
   "Bicycle Kitchen": {
     "en-US": "Bicycle Kitchen",
     "es-US": "La Bicicocina"
+  },
+  "Home": {
+    "en-US": "Home",
+    "es-US": "Inicio"
+  },
+  "Spanish": {
+    "en-US": "Spanish",
+    "es-US": "Español"
+  },
+  "English": {
+    "en-US": "English",
+    "es-US": "Inglés"
+  },
+  "Switch to": {
+    "en-US": "Switch to",
+    "es-US": "Cambiar a"
   }
 }
