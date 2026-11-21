@@ -5,6 +5,7 @@ import translations from "./src/_data/translations.json" with { type: "json" };
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAnchor));
   eleventyConfig.addPassthroughCopy({ "./src/static/": "/" });
   eleventyConfig.addPlugin(i18n, {
     translations,
@@ -24,7 +25,6 @@ export default function (eleventyConfig) {
       },
     },
   });
-  // eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAnchor));
 }
 
 export const config = {
