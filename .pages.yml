@@ -26,6 +26,7 @@ content:
     type: file
     list:
       collapsible:
+        collapsed: true
         summary: "{label}"
     path: src/_data/key-pages.json
     fields:
