@@ -37,8 +37,8 @@ content:
     label: Site (English)
     type: collection
     path: src/content/en-US
-    filename:
-      field: show
+    view: 
+          node: filename
     fields:
       - name: title
         type: string
