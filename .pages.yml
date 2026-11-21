@@ -30,8 +30,8 @@ content:
       - name: slug
         label: Slug
         type: string
-      - name: labbel
-        label: Labbel
+      - name: label
+        label: Label
         type: string
   - name: site-en
     label: Site (English)
