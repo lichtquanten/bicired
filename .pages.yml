@@ -57,6 +57,9 @@ content:
         sort: slug
         order: asc
       layout: tree
+    filename:
+      template: "{slug}.md"
+      field: create
     fields:
       - name: slug
         type: string
