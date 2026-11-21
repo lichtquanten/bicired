@@ -8,7 +8,15 @@
       content="DIY/DIT bicycle repair co-op in Los Angeles"
     />
     <link rel="stylesheet" href="/css/simple.css" />
-    <title>{{ title }}</title>
+    <title>
+      {% if title == "Home"%}
+        Bicycle Kitchen
+      {% elsif title == "Inicio" %}
+        Bicicocina
+      {% else %}
+        {{title}}
+      {% endif %}
+    </title>
   </head>
 
   <body>
@@ -40,10 +48,19 @@
           alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
         />
         <ul>
-          {% for key-page in key-pages %}
+          {% if locale == "en-US" %}
           <li>
-            <a href="/{{ locale }}/{{ key-page.slug }}">
-              {{ key-page.label | i18n }}
+            <a href="/en-US">Home</a>
+          </li>
+          {% elsif locale == "es-US" %}
+          <li>
+            <a href="/es-US">Inicio</a>
+          </li>
+          {% endif %}
+          {% for key-page-titles in key-pages-titles %}
+          <li>
+            <a href="/{{ locale }}/{{ key-page-titles[locale] | slugify }}">
+              {{ key-page-titles[locale] }}
             </a>
           </li>
           {% endfor %}

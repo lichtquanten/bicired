@@ -1,9 +1,7 @@
 ---
 title: Volunteer Orientation
 layout: base
-datee: 2026x11x20
 tags: volunteer
-asdf: beeee
 ---
 
 # Volunteer Orientation
