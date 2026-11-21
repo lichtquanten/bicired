@@ -38,7 +38,7 @@ content:
     type: collection
     path: src/content/en-US
     filename:
-      template: "{fields.slug}.json
+      template: "{fields.slug}.json"
       field: show
     fields:
       - name: slug
