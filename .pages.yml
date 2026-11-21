@@ -38,10 +38,10 @@ content:
     type: collection
     path: src/content/en-US
     view:
-      fields: [slug, title]
-      primary: slug
+      fields: [title, slug]
+      primary: title
       default:
-        sort: slug
+        sort: title
         order: asc
     filename: "{slug}.md"
     fields:
@@ -60,10 +60,10 @@ content:
     type: collection
     path: src/content/es-US
     view:
-      fields: [slug, title]
-      primary: slug
+      fields: [title, slug]
+      primary: title
       default:
-        sort: slug
+        sort: title
         order: asc
     filename: "{slug}.md"
     fields:
