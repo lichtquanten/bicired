@@ -68,7 +68,7 @@ content:
     filename: "{slug}.md"
     fields:
       - name: slug
-        label: Slug
+        label: Filename
         type: string
         required: true
       - name: title
