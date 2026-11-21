@@ -1,3 +1,10 @@
+media:
+  - name: images
+    label: Images
+    input: src/content/img
+    output: /img
+    rename: safe
+    
 content:
   - name: hours-en-US
     label: Hours (English)
@@ -54,6 +61,8 @@ content:
       - name: body
         type: rich-text
         label: Body
+        options:
+          path: src/content/img
   - name: site-es
     label: Site (Spanish)
     type: collection
