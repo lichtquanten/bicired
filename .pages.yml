@@ -51,9 +51,6 @@ content:
     label: Site (Spanish)
     type: collection
     path: src/content/es-US
-    filename:
-      template: "{year}-{month}-{day}-{primary}.md"
-      field: show
     view:
       fields: [node.filename, "title"]
       primary: "node.filename"
