@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Bicycle Kitchen
-slug: index
+slug: home
 ---
 
 # Bicycle Kitchen (Los Angeles)
