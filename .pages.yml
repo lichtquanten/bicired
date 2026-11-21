@@ -51,7 +51,8 @@ content:
     type: collection
     path: src/content/es-US
     view:
-      primary: node.filename
+      fields: ["node.filename", "title"]
+      primary: "node.filename"
     fields:
       - name: slug
         type: string
