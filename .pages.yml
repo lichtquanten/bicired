@@ -50,7 +50,11 @@ content:
     label: Site (Spanish)
     type: collection
     path: src/content/es-US
+    view:
+      primary: node.filename
     fields:
+      - name: slug
+        type: string
       - name: title
         type: string
       - name: body
