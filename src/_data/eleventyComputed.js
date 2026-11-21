@@ -1,14 +1,23 @@
 /*
-This script sets Eleventy to use each page's title property,
-as set in the frontmatter, as its slug.
+This script adds values to each page's frontmatter
+automatically.
 
-This allows users in the CMS to refer to files by title without
-knowing the filename.
+layout: defaults to base.html
+> Allows CMS users to create new files without worrying
+about adding a layout to the frontmatter.
 
-Without this script, Eleventy would use each file's name,
-without file extension, as the slug.
+permalink: defaults to a page's slugified title.
+> Allows CMS users to refer to page's by title rather than
+filename. By default, Elevently would use filename as a page's
+slug.
 */
 export default {
+  layout({ layout }) {
+    if (layout) {
+      return layout;
+    }
+    return "base.html";
+  },
   permalink({ permalink, page, title }) {
     if (permalink) {
       return permalink;
