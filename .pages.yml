@@ -13,7 +13,7 @@ content:
     fields:
       - name: body
         type: rich-text
-    - name: announcements
+- name: announcements
     label: Announcements
     type: file
     path: src/_data/announcements.json
