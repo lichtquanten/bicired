@@ -1,4 +1,18 @@
 content:
+  - name: hours-en-US
+    label: Hours (English)
+    type: file
+    path: src/content/en-US/hours.md
+    fields:
+      - name: body
+        type: rich-text
+  - name: hours-es-US
+    label: Hours (Spanish)
+    type: file
+    path: src/content/es-US/hours.md
+    fields:
+      - name: body
+        type: rich-text
   - name: duhsite-en
     label: Duh Site (English)
     type: collection
