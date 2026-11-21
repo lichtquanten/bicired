@@ -1,7 +1,6 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import markdownItAnchor from "markdown-it-anchor";
 import i18n from "eleventy-plugin-i18n";
-import { I18nPlugin } from "@11ty/eleventy";
 
 import translations from "./src/_data/translations.json" with { type: "json" };
 
@@ -13,12 +12,6 @@ export default function (eleventyConfig) {
     translations,
     fallbackLocales: {
       "*": "en-US",
-    },
-  });
-  eleventyConfig.addPlugin(I18nPlugin, {
-    defaultLanguage: "en-US",
-    filters: {
-      url: "locale_url",
     },
   });
 

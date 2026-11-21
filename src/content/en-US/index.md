@@ -4,8 +4,6 @@ title: Bicycle Kitchen
 permalink: en-US/index.html
 ---
 
-# Bicycle Kitchen (Los Angeles)
-
 ![two people working on a bike](/img/wrenching.jpg)
 
 ## About
@@ -17,9 +15,6 @@ Our mission is to:
 - promote the bicycle as a fun, safe, and accessible form of transportation,
 - foster healthy urban communities, and
 - provide a welcoming space to learn about building, maintaining, and riding bicycles.
-
-* * *
-
 
 * * *
 
@@ -46,5 +41,3 @@ Our pricing is sliding scale! We offer a work exchange if you can’t afford a m
 ## Volunteer
 
 Come volunteer! No experience or knowledge needed whatsoever. Stop by during our open hours or email us at [volunteer@bicyclekitchen.com](volunteer@bicyclekitchen.com) to get started.
-
-* * *

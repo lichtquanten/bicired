@@ -1,7 +1,7 @@
 ---
 layout: base.html
-title: Fix a Bike
+title: Bike Repair
 ---
-# Fix a Bike
+# Bike Repair
 
 More info soon

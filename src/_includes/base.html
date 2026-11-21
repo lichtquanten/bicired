@@ -9,100 +9,65 @@
     />
     <link rel="stylesheet" href="/css/simple.css" />
     <title>
-      {% if title == "Home"%}
-        Bicycle Kitchen
-      {% elsif title == "Inicio" %}
-        Bicicocina
-      {% else %}
-        {{title}}
-      {% endif %}
+      {% if title == "Home"%} Bicycle Kitchen {% elsif title == "Inicio" %}
+      Bicicocina {% else %} {{title}} {% endif %}
     </title>
   </head>
 
   <body>
     <header>
-      <!-- <div style="font-family: serif; font-size: 3rem; display: flex; align-items: center; justify-content: space-around;">
-        <span>{{ "Bicycle Kitchen" | i18n }}
-        </span>
+      <div style="display: flex; justify-content: space-around; align-items: center;">
+      <span class="title">{{ "Bicycle Kitchen" | i18n }} </span>
         <img
-          style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
+          style="max-width: 5rem";
           src="/img/logo.png"
           alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
-          width="10px"
         />
-      </div> -->
+      </div>
       <nav>
+      <ul>
+        {% if locale == "en-US" %}
+        <li>
+          <a href="/en-US">Home</a>
+        </li>
+        {% elsif locale == "es-US" %}
+        <li>
+          <a href="/es-US">Inicio</a>
+        </li>
+        {% endif %} {% for key-page-titles in key-pages-titles %}
+        <li>
+          <a href="/{{ locale }}/{{ key-page-titles[locale] | slugify }}">
+            {{ key-page-titles[locale] }}
+          </a>
+        </li>
+        {% endfor %} {% if locale == "en-US" %}
+        <li>
+          <a href="/es-US"> Español </a>
+        </li>
+        {% elsif locale == "es-US" %}
+        <li>
+          <a href="/en-US"> English </a>
+        </li>
+        {% endif %}
+      </ul>
         <!-- <img
-          style="max-width: 5rem"
-          src="/img/bike.png"
-          alt="Poorly drawn, hand-sketched bicycle"
-        /> -->
-        <img
-          style="
-            margin-top: 1rem;
-            filter: invert(var(--inversion));
-            max-width: 4rem;
-            transform: rotate(10deg);
-          "
-          src="/img/logo.png"
-          alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
-        />
-        <ul>
-          {% if locale == "en-US" %}
-          <li>
-            <a href="/en-US">Home</a>
-          </li>
-          {% elsif locale == "es-US" %}
-          <li>
-            <a href="/es-US">Inicio</a>
-          </li>
-          {% endif %}
-          {% for key-page-titles in key-pages-titles %}
-          <li>
-            <a href="/{{ locale }}/{{ key-page-titles[locale] | slugify }}">
-              {{ key-page-titles[locale] }}
-            </a>
-          </li>
-          {% endfor %}
-          {% if locale == "en-US" %}
-          <li>
-            <a href="/es-US"> Español </a>
-          </li>
-          {% elsif locale == "es-US" %}
-          <li>
-            <a href="/en-US"> English </a>
-          </li>
-          {% endif %}
-        </ul>
-        <img
-          style="
-            margin-top: 1rem;
-            filter: invert(var(--inversion));
-            max-width: 4rem;
-            transform: rotate(10deg);
-          "
+          class="nav-img"
           src="/img/work-with-tools.png"
           alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
-        />
-        <!-- <img
-          style="max-width: 5rem"
-          src="/img/wrench.png"
-          alt="Poorly drawn, hand-sketched wrench"
         /> -->
       </nav>
-      <!-- <div style="display: flex; justify-content: center">
-                <img style="margin: 0; padding: 0; flex-shrink: 1; flex-grow: 0; min-width: 0; max-width:2rem" src="/img/wrench.png" alt="yo" width="10px">
-            </div> -->
       <hr />
     </header>
     <main>{{ content }}</main>
     <footer>
       <h1>Contact Us</h1>
+      <img
+        src="/img/wrench.png"
+        alt="Poorly drawn, hand-sketched bicycle"
+      />
       <p>
-        Email:
-        <a href="mailto:kitchen@bicyclekitchen.com"
-          >kitchen@bicyclekitchen.com</a
-        >
+        Email
+        <a href="mailto:kitchen@bicyclekitchen.com">Email</a>
       </p>
       <p>Phone: <a href="tel:+13236622776">(323) 662-2776</a></p>
       <p>
@@ -115,20 +80,7 @@
           >4429 Fountain Ave, Los Angeles, CA 90029</a
         >
       </p>
+      <p>Copyleft 2026</p>
     </footer>
   </body>
 </html>
-<!-- <div display: flex; align-items: center; justify-content: flex-left;>
-        <img
-          style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
-          src="/img/logo.png"
-          alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
-        />
-        <img
-          style="margin-top: 1rem; filter: invert(var(--inversion)); max-width: 4rem; transform: rotate(10deg)"
-          src="/img/bk-in-sunny-la.png"
-          alt="Bicycle Kitchen logo. Human pedaling an egg beater as if it were a bicycle."
-        />
-
-
-      </div> -->
