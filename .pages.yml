@@ -52,7 +52,7 @@ content:
     type: collection
     path: src/content/es-US
     view:
-      fields: ["node.filename", "title", "date"]
+      fields: ["name", "title", "date"]
       primary: "node.filename"
       default:
         order: asc
