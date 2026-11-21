@@ -25,30 +25,28 @@ content:
     label: Key Pages
     type: file
     list: true
-    path: src/_data/key-pages.json
+    path: src/_data/key-pages-titles.json
     fields:
-      - name: slug
-        label: Slug
+      - name: "en-US"
+        label: Title (English)
         type: string
-      - name: label
-        label: Label
+        required: true
+      - name: "es-US"
+        label: Title (Spanish)
         type: string
+        required: true
   - name: site-en
     label: Site (English)
     type: collection
     path: src/content/en-US
+    filename: "{title}.md"
     view:
-      fields: [title, slug]
-      primary: slug
+      fields: [title]
+      primary: title
       default:
         sort: title
         order: asc
-    filename: "{slug}.md"
     fields:
-      - name: slug
-        label: Slug
-        type: string
-        required: true
       - name: title
         label: Title
         type: string
@@ -60,18 +58,14 @@ content:
     label: Site (Spanish)
     type: collection
     path: src/content/es-US
+    filename: "{title}.md"
     view:
-      fields: [title, slug]
-      primary: slug
+      fields: [title]
+      primary: title
       default:
         sort: title
         order: asc
-    filename: "{slug}.md"
     fields:
-      - name: slug
-        label: Slug
-        type: string
-        required: true
       - name: title
         label: Title
         type: string
