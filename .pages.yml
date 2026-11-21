@@ -39,11 +39,10 @@ content:
     path: src/content/en-US
     view:
       fields: [title, slug]
-      primary: title
+      primary: slug
       default:
         sort: title
         order: asc
-    filename: "{slug}.md"
     fields:
       - name: slug
         label: Slug
@@ -61,11 +60,10 @@ content:
     path: src/content/es-US
     view:
       fields: [title, slug]
-      primary: title
+      primary: slug
       default:
         sort: title
         order: asc
-    filename: "{slug}.md"
     fields:
       - name: slug
         label: Slug
