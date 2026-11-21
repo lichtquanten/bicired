@@ -1,5 +1,5 @@
 ---
-slug: zzzz=
+slug: zzzz
 title: =aaaaa
 ---
 asdfasdf
