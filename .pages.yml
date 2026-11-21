@@ -13,8 +13,8 @@ content:
     fields:
       - name: body
         type: rich-text
-  - name: duhsite-en
-    label: Duh Site (English)
+  - name: site-en
+    label: Site (English)
     type: collection
     path: src/content/en-US
     fields:
@@ -22,8 +22,8 @@ content:
         type: string
       - name: body
         type: rich-text
-  - name: duhsite-en
-    label: Duh Site (Spanish)
+  - name: site-en
+    label: Site (Spanish)
     type: collection
     path: src/content/es-US
     fields:
