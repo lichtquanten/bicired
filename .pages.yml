@@ -1,18 +1,20 @@
-components:
-  day:
-    type: object
-    label: Day
-    fields:
-      - name: times
-        label: Times
-        type: string
-
 content:
-  - name: homepage
-    label: Homepage
-    type: file
-    path: src/index.md
+  - name: duhsite-en
+    label: Duh Site (English)
+    type: collection
+    path: src/content/en-US
     fields:
+      - name: title
+        type: string
+      - name: body
+        type: rich-text
+  - name: duhsite-en
+    label: Duh Site (Spanish)
+    type: collection
+    path: src/content/es-US
+    fields:
+      - name: title
+        type: string
       - name: body
         type: rich-text
   - name: announcements
@@ -23,24 +25,4 @@ content:
       - name: closure
         label: Closure
         type: boolean
-  - name: hours
-    label: Hours
-    type: file
-    path: src/_data/hours.json
-    fields:
-      - name: hours
-        label: Hours
-        type: object
-        list:
-          collapsible:
-              summary: "{day}"
-        fields:
-          - { name: day, label: Day, type: string, required: true }
-          - { name: hours, label: Hours, type: string, required: true }
-          - { name: note, label: Note, type: string }
-  - name: bigimportant
-    label: Big Important
-    type: file
-    path: src/bindex.html
-    format: code
     
