@@ -38,7 +38,7 @@ content:
     type: collection
     path: src/content/en-US
     view:
-      fields: [slug]
+      fields: [slug, title]
       primary: slug
       default:
         sort: slug
@@ -60,7 +60,7 @@ content:
     type: collection
     path: src/content/es-US
     view:
-      fields: [slug]
+      fields: [slug, title]
       primary: slug
       default:
         sort: slug
