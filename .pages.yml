@@ -59,7 +59,7 @@ content:
       layout: tree
     filename:
       template: "{slug}.md"
-      field: create
+      field: show
     fields:
       - name: slug
         type: string
