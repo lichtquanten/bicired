@@ -38,8 +38,13 @@ content:
     type: collection
     path: src/content/en-US
     view:
-      fields: ["node.filename", "title"]
-      primary: "node.filename"
+      fields: [slug]
+      primary: slug
+      default:
+        sort: slug
+        order: asc
+      layout: tree
+    filename: "{slug}.md"
     fields:
       - name: slug
         type: string
