@@ -24,6 +24,7 @@ content:
   - name: key-pages
     label: Key Pages
     type: file
+    format: json
     list:
       collapsible:
         collapsed: true
