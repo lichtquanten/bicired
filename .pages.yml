@@ -53,7 +53,7 @@ content:
     view:
       fields: ["node.filename", "title"]
       primary: "node.filename"
-      layout: true
+      layout: tree
     fields:
       - name: slug
         type: string
