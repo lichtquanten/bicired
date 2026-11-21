@@ -54,7 +54,8 @@ content:
     view:
       fields: [node.filename, "title"]
       primary: "node.filename"
-      default.order: asc
+      default:
+        order: asc
     fields:
       - name: slug
         type: string
