@@ -60,6 +60,7 @@ content:
     fields:
       - name: slug
         type: string
+        hidden: true
       - name: title
         type: string
       - name: body
