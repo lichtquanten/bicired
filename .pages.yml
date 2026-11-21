@@ -53,13 +53,12 @@ content:
     path: src/content/es-US
     view:
       fields: [slug]
+      primary: slug
       default:
         sort: slug
         order: asc
       layout: tree
-    filename:
-      template: "{slug}.md"
-      field: false
+    filename: "{slug}.md"
     fields:
       - name: slug
         type: string
