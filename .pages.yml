@@ -61,12 +61,28 @@ content:
       default:
         sort: slug
         order: asc
-      layout: tree
     filename: "{slug}.md"
     fields:
       - name: slug
+        label: Slug
         type: string
+        required: true
       - name: title
+        label: Title
         type: string
+        required: true
       - name: body
         type: rich-text
+  - name: translation
+    label: Translations
+    type: file
+    path: src/_data/translations.json
+    fields:
+      - name: expression
+        label: Expression (English)
+        type: object
+        fields:
+          - name: title
+            type: string
+          - name: body
+            type: rich-text
